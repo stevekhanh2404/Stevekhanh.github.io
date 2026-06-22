@@ -1627,6 +1627,21 @@
       .viz-kpis > div { grid-template-columns: 1fr; gap: 5px; }
     }
 
+
+    /* Keep animated numbers the same size as the surrounding VND/B/% text */
+    .metric strong .counter {
+      font-size: inherit !important;
+      line-height: inherit !important;
+      color: inherit !important;
+      font-weight: inherit !important;
+      letter-spacing: inherit !important;
+      vertical-align: baseline;
+    }
+
+    .metric strong {
+      white-space: nowrap;
+    }
+
   </style>
   <script type="application/ld+json">
   {
