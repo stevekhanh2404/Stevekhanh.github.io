@@ -6,7 +6,7 @@
   <meta name="description" content="Steve Khanh — Digital Performance Marketing, financial planning, marketing analytics and data-analyst portfolio." />
   <meta name="theme-color" content="#08111f" />
   <meta property="og:title" content="Steve Khanh | Digital Performance Marketing & Growth" />
-  <meta property="og:description" content="4+ years of combined academic and applied experience across performance marketing, financial planning, business analytics and data visualization." />
+  <meta property="og:description" content="Performance marketing and business analytics portfolio featuring VND 40B company-wide marketing budget exposure, VND 5B+ directly managed paid media and data-driven decision support." />
   <meta property="og:type" content="website" />
   <title>Steve Khanh | Performance Marketing, Business Analytics & Data</title>
 
@@ -2400,6 +2400,36 @@
       }
     }
 
+
+
+    .enterprise-scale-chart .bar-row {
+      grid-template-columns: 72px 1fr 150px;
+    }
+    .enterprise-scale-chart .bar-value {
+      display: grid;
+      gap: 2px;
+      text-align: right;
+      line-height: 1.2;
+    }
+    .enterprise-scale-chart .bar-value b {
+      color: var(--cyan);
+      font-size: 13px;
+    }
+    .enterprise-scale-chart .bar-value small {
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 700;
+    }
+    .scale-note { margin-top: 14px; max-width: 720px; }
+    @media (max-width: 720px) {
+      .enterprise-scale-chart .bar-row {
+        grid-template-columns: 52px 1fr 108px;
+        gap: 9px;
+      }
+      .enterprise-scale-chart .bar-value b { font-size: 11px; }
+      .enterprise-scale-chart .bar-value small { font-size: 9px; }
+    }
+
   </style>
   <script type="application/ld+json">
   {
@@ -2609,19 +2639,19 @@
             <div class="eyebrow" data-i18n="snapshot">Selected performance snapshot</div>
             <div class="metric-grid">
               <div class="metric">
-                <strong>VND 5B</strong>
+                <strong>VND 40B</strong>
+                <span class="metric-usd">≈ USD 1.52M</span>
+                <span data-i18n="metricSpend">Company-wide annual marketing budget exposure</span>
+              </div>
+              <div class="metric">
+                <strong>VND 5B+</strong>
                 <span class="metric-usd">≈ USD 190K</span>
-                <span data-i18n="metricSpend">Annual advertising investment managed</span>
+                <span data-i18n="metricOnline">Paid media directly managed</span>
               </div>
               <div class="metric">
-                <strong>VND 22B</strong>
-                <span class="metric-usd">≈ USD 836K</span>
-                <span data-i18n="metricOnline">Online revenue supported</span>
-              </div>
-              <div class="metric">
-                <strong>VND 32B</strong>
-                <span class="metric-usd">≈ USD 1.22M</span>
-                <span data-i18n="metricOmni">Omnichannel revenue supported</span>
+                <strong>VND 800B</strong>
+                <span class="metric-usd">≈ USD 30.4M</span>
+                <span data-i18n="metricOmni">Reported annual company revenue scale</span>
               </div>
               <div class="metric">
                 <strong>105%</strong>
@@ -2692,11 +2722,12 @@
           <article class="panel reveal delay-2">
             <h3 data-i18n="budgetEvolutionTitle">Selected annual planning scope</h3>
             <p class="subtle" data-i18n="budgetEvolutionText">Budget plans were developed from historical performance, expected revenue, brand priorities, product focus, market expansion and channel-level unit costs.</p>
-            <div class="budget-chart">
-              <div class="bar-row"><span class="bar-label">2024</span><div class="bar-track"><div class="bar-fill" style="--w:66%"></div></div><span class="bar-value">VND 3.3B</span></div>
-              <div class="bar-row"><span class="bar-label">2025</span><div class="bar-track"><div class="bar-fill" style="--w:90%"></div></div><span class="bar-value">VND 4.5B</span></div>
-              <div class="bar-row"><span class="bar-label" data-i18n="annualScope">Annual scope</span><div class="bar-track"><div class="bar-fill" style="--w:100%"></div></div><span class="bar-value" data-i18n="upTo5B">Up to 5B</span></div>
+            <div class="budget-chart enterprise-scale-chart">
+              <div class="bar-row"><span class="bar-label">2024</span><div class="bar-track"><div class="bar-fill" style="--w:37.5%"></div></div><span class="bar-value"><b data-i18n="scale2024Mktg">15B Mktg</b><small data-i18n="scale2024Rev">300B Revenue</small></span></div>
+              <div class="bar-row"><span class="bar-label">2025</span><div class="bar-track"><div class="bar-fill" style="--w:50%"></div></div><span class="bar-value"><b data-i18n="scale2025Mktg">20B Mktg</b><small data-i18n="scale2025Rev">400B Revenue</small></span></div>
+              <div class="bar-row"><span class="bar-label">2026</span><div class="bar-track"><div class="bar-fill" style="--w:100%"></div></div><span class="bar-value"><b data-i18n="scale2026Mktg">40B Mktg</b><small data-i18n="scale2026Rev">800B Revenue</small></span></div>
             </div>
+            <p class="fx-note scale-note" data-i18n="scaleNote">2024-2025 values are normalized planning-scale estimates using the 2026 marketing-to-revenue ratio of 5%; 2026 reflects the reported company scale.</p>
             <div class="creator-box">
               <div class="creator-number">VND 362.5M</div>
               <h3 data-i18n="creatorTitle">Separate TikTok Code Ads amplification plan</h3>
@@ -2946,7 +2977,7 @@
         portraitKicker: "Professional profile", portraitSummary: "Performance marketer with strong financial discipline, business thinking and a clear path toward professional Data Analytics.",
         qf1Label: "Base", qf1Value: "Ho Chi Minh City, Vietnam", qf2Label: "Experience", qf2Value: "4+ years combined", qf3Label: "Direction", qf3Value: "Marketing Analytics → Data Analyst", qf4Label: "Edge", qf4Value: "Finance-aware, business-driven decision making",
         viewWork: "View selected work", startConversation: "Start a conversation", snapshot: "Selected performance snapshot",
-        metricSpend: "Annual advertising investment managed", metricOnline: "Online revenue supported", metricOmni: "Omnichannel revenue supported", metricKPI: "Media KPI achievement",
+        metricSpend: "Company-wide annual marketing budget exposure", metricOnline: "Paid media directly managed", metricOmni: "Reported annual company revenue scale", metricKPI: "Media KPI achievement",
         availability: "Based in Ho Chi Minh City · Open to international remote opportunities", scroll: "Scroll",
         profileEyebrow: "Executive profile", profileTitle: "A performance marketer evolving into a data analyst with strong financial and business thinking.",
         profileCard1Title: "Commercial performance", profileCard1Text: "More than four years of combined academic and applied experience across paid media, omnichannel sales support, media planning, KPI forecasting and cross-functional growth operations in jewelry/retail and FMCG manufacturing/export.",
@@ -2970,7 +3001,7 @@
         dir2Title: "Turn spreadsheets into scalable analytics", dir2Text: "Move from Excel-heavy control toward SQL, dashboarding and reusable data models for faster and more reliable decision support.",
         dir3Title: "Bring finance-aware business thinking", dir3Text: "Use ROI logic, unit economics, pacing discipline and opportunity cost thinking to recommend smarter actions—not just describe the numbers.",
         budgetEyebrow: "Financial planning & budget architecture", budgetTitle: "Building media investment plans that connect brand growth and financial discipline.",
-        budgetEvolutionTitle: "Selected annual planning scope", budgetEvolutionText: "Budget plans were developed from historical performance, expected revenue, brand priorities, product focus, market expansion and channel-level unit costs.",
+        budgetEvolutionTitle: "Company-wide marketing scale and budget governance", budgetEvolutionText: "The planning view separates enterprise marketing-budget exposure from directly managed paid media, linking budget levels to revenue scale, strategic priorities and performance measurement.", scaleNote: "2024-2025 values are normalized planning-scale estimates using the 2026 marketing-to-revenue ratio of 5%; 2026 reflects the reported company scale.", scale2024Mktg: "15B Marketing", scale2024Rev: "300B Revenue", scale2025Mktg: "20B Marketing", scale2025Rev: "400B Revenue", scale2026Mktg: "40B Marketing", scale2026Rev: "800B Revenue",
         annualScope: "Annual scope", upTo5B: "Up to 5B", creatorTitle: "Separate TikTok Code Ads amplification plan",
         creatorText: "A dedicated 2026 paid-amplification pool for KOL/KOC content, separated from core always-on media to expand brand coverage and scale high-potential creator assets through reach-focused Code Ads.",
         methodTitle: "Planning and governance method", method1Title: "Leadership inputs", method1Text: "Start with expected revenue, growth ambition, brand priorities and product-launch calendar from CEO, CMO and Brand Manager.",
@@ -3040,7 +3071,7 @@
         portraitKicker: "Hồ sơ chuyên nghiệp", portraitSummary: "Người làm Performance Marketing có kỷ luật tài chính, tư duy business tốt và định hướng rõ ràng trở thành Data Analyst chuyên nghiệp.",
         qf1Label: "Khu vực", qf1Value: "TP. Hồ Chí Minh, Việt Nam", qf2Label: "Kinh nghiệm", qf2Value: "Hơn 4 năm kết hợp", qf3Label: "Định hướng", qf3Value: "Marketing Analytics → Data Analyst", qf4Label: "Lợi thế", qf4Value: "Ra quyết định theo tư duy tài chính và business",
         viewWork: "Xem dự án nổi bật", startConversation: "Trao đổi công việc", snapshot: "Kết quả nổi bật",
-        metricSpend: "Ngân sách quảng cáo quản lý mỗi năm", metricOnline: "Doanh thu online được hỗ trợ", metricOmni: "Doanh thu omnichannel được hỗ trợ", metricKPI: "Mức hoàn thành KPI media",
+        metricSpend: "Quy mô ngân sách Marketing toàn công ty tham gia hoạch định", metricOnline: "Ngân sách Paid Media trực tiếp quản lý", metricOmni: "Quy mô doanh thu năm được công bố của công ty", metricKPI: "Mức hoàn thành KPI media",
         availability: "Làm việc tại TP.HCM · Sẵn sàng cho cơ hội remote quốc tế", scroll: "Cuộn",
         profileEyebrow: "Hồ sơ chuyên môn", profileTitle: "Một Performance Marketer tư duy như người hoạch định kinh doanh.",
         profileCard1Title: "Hiệu quả thương mại", profileCard1Text: "Hơn bốn năm nền tảng kết hợp giữa học thuật và thực chiến về Paid Media, hỗ trợ bán hàng đa kênh, media planning, dự báo KPI và phối hợp tăng trưởng liên phòng ban trong ngành trang sức/bán lẻ và FMCG sản xuất/xuất khẩu.",
@@ -3064,7 +3095,7 @@
         dir2Title: "Biến spreadsheet thành hệ thống analytics mở rộng", dir2Text: "Tiến từ việc kiểm soát nặng bằng Excel sang SQL, dashboard và mô hình dữ liệu tái sử dụng để hỗ trợ quyết định nhanh và tin cậy hơn.",
         dir3Title: "Mang tư duy business và tài chính vào phân tích", dir3Text: "Dùng logic ROI, unit economics, kỷ luật pacing và tư duy opportunity cost để đưa ra khuyến nghị thông minh — không chỉ mô tả con số.",
         budgetEyebrow: "Hoạch định tài chính & kiến trúc ngân sách", budgetTitle: "Xây dựng kế hoạch đầu tư media cân bằng giữa tăng trưởng thương hiệu và kỷ luật tài chính.",
-        budgetEvolutionTitle: "Quy mô kế hoạch năm tiêu biểu", budgetEvolutionText: "Ngân sách được xây dựng từ hiệu quả lịch sử, doanh thu dự kiến, ưu tiên Brand, trọng tâm sản phẩm, mở rộng thị trường và chi phí đơn vị theo từng kênh.",
+        budgetEvolutionTitle: "Quy mô Marketing toàn công ty và quản trị ngân sách", budgetEvolutionText: "Mô hình tách rõ quy mô ngân sách Marketing toàn doanh nghiệp với phần Paid Media trực tiếp quản lý, đồng thời liên kết ngân sách với doanh thu, ưu tiên chiến lược và đo lường hiệu quả.", scaleNote: "Số liệu 2024-2025 là quy mô kế hoạch được chuẩn hóa theo tỷ lệ Marketing/Doanh thu 5% của năm 2026; năm 2026 phản ánh quy mô công ty được công bố.", scale2024Mktg: "15B Marketing", scale2024Rev: "300B Doanh thu", scale2025Mktg: "20B Marketing", scale2025Rev: "400B Doanh thu", scale2026Mktg: "40B Marketing", scale2026Rev: "800B Doanh thu",
         annualScope: "Quy mô năm", upTo5B: "Tối đa 5B", creatorTitle: "Kế hoạch TikTok Code Ads tách riêng",
         creatorText: "Ngân sách khuếch đại trả phí riêng cho nội dung KOL/KOC trong năm 2026, tách khỏi always-on media để tăng độ phủ thương hiệu và scale các tài sản creator tiềm năng bằng mục tiêu Reach.",
         methodTitle: "Phương pháp lập và quản trị ngân sách", method1Title: "Đầu vào từ lãnh đạo", method1Text: "Bắt đầu từ doanh thu dự kiến, tham vọng tăng trưởng, ưu tiên Brand và lịch ra mắt sản phẩm từ CEO, CMO và Brand Manager.",
