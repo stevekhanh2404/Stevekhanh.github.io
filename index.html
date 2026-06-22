@@ -2291,30 +2291,112 @@
 
     @media (max-width: 640px) {
       .intro-modal {
-        padding: 12px;
+        padding: 10px;
+      }
+
+      .intro-modal-card {
+        width: min(92vw, 430px);
+        max-height: 86vh;
+        border-radius: 24px;
+        overflow: auto;
+      }
+
+      .intro-visual {
+        padding: 16px 16px 10px;
+        gap: 10px;
       }
 
       .intro-portrait-wrap {
-        width: 176px;
-        height: 224px;
+        width: 124px;
+        height: 156px;
+      }
+
+      .intro-ring,
+      .intro-ring::before,
+      .intro-ring::after {
+        inset: -6px;
+      }
+
+      .intro-ring::before {
+        inset: -12px;
+      }
+
+      .intro-ring::after {
+        inset: -18px;
+      }
+
+      .intro-mini-tags {
+        gap: 6px;
+      }
+
+      .intro-mini-tags span {
+        padding: 6px 8px;
+        font-size: 10px;
+      }
+
+      .intro-copy {
+        padding: 16px 16px 18px;
+        gap: 12px;
+      }
+
+      .intro-topline {
+        font-size: 10px;
+        letter-spacing: .1em;
       }
 
       .intro-head h2 {
-        font-size: 31px;
+        font-size: 26px;
+        margin-bottom: 6px;
       }
 
       .intro-subtitle {
-        font-size: 14px;
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .intro-pillars {
+        gap: 8px;
+      }
+
+      .intro-pillar {
+        min-height: unset;
+        padding: 10px 11px;
+        border-radius: 14px;
+      }
+
+      .intro-pillar .label {
+        font-size: 10px;
+        margin-bottom: 5px;
+      }
+
+      .intro-pillar p {
+        font-size: 12px;
+        line-height: 1.45;
       }
 
       .intro-actions {
         flex-direction: column;
         align-items: stretch;
+        gap: 8px;
       }
 
       .intro-actions .btn {
         width: 100%;
         justify-content: center;
+        min-height: 46px;
+      }
+
+      .intro-secondary-note {
+        font-size: 11px;
+        line-height: 1.45;
+      }
+
+      .intro-close {
+        top: 10px;
+        right: 10px;
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
       }
     }
 
